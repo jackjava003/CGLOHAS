@@ -1,4 +1,4 @@
-package _00_init;
+﻿package _00_init;
 
 import java.io.File;
 import java.io.IOException;
@@ -187,7 +187,7 @@ public class JavaMailUtil {
 	}
 
 	static {
-		userid = "java00303@gmail.com";// 利用此帳號寄信
-		password = "java003password";
+		userid = "";// 利用此帳號寄信
+		password = "";
 	}
 }
