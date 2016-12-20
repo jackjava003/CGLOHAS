@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<!-- Generated 2016/9/2 下午 05:21:46 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+
+	<class name="_09_community.model.HolderBean" table="holder">
+
+		<id name="userID" type="int">
+			<column name="userID" />
+			<generator class="assigned" />
+		</id>
+		<property name="zipCode"  />
+		<property name="city"  />
+		<property name="area"  />
+		<property name="location"  />
+		<property name="cook_exp" />
+		<property name="protype" />
+		<property name="pro_other"  />
+		<property name="foodIntro" />
+		<property name="cookday" />
+		<property name="cooktime"  />
+		<property name="limitno" />
+		<property name="vegetarian" />
+		<property name="price"  />
+		<property name="open_condition" />
+		<property name="selfInfo" />
+		<property name="createTime" generated="always"/>
+		
+	</class>
+
+</hibernate-mapping>

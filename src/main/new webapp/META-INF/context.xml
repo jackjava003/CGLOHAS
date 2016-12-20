@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?> 
+<Context displayName="JSP Servlet Example" docBase="example" path="/example" reloadable="true">
+  />   
+  <!--                     MySQL                   -->
+  <Resource name="jdbc/cglohas" type="javax.sql.DataSource"
+      username="root" password="jackjava003"
+      driverClassName="com.mysql.jdbc.Driver"
+      url="jdbc:mysql://127.0.0.1:3306/cglohas"
+      connectionProperties="useUnicode=yes;characterEncoding=utf8;useSSL=true;"
+      maxActive="8"
+      maxIdle="4"
+      maxWait="5000"
+  />  
+   
+
+</Context>

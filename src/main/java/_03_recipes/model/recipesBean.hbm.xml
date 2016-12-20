@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016/9/4 ?U?? 05:59:58 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="_03_recipes.model.recipesBean" table="recipes">
+        <id name="recipesID" type="int">
+            <column name="RECIPESID" />
+            <generator class="native" />
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        <property name="culture" type="java.lang.String">
+            <column name="CULTURE" />
+        </property>
+        <property name="type" type="java.lang.String">
+            <column name="TYPE" />
+        </property>
+        <property name="image" column="IMAGE" type="binary" />
+    </class>
+</hibernate-mapping>

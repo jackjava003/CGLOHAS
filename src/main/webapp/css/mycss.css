@@ -1,0 +1,25 @@
+#myVideo {
+position:absolute;
+z-index: 2;
+right: 0;
+bottom: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background-color: black;
+background-position: center center;
+background-size: contain;
+object-fit: cover;
+}
+#myVideoLogo {
+    margin: auto 0;
+    position: absolute;
+    top: 150px;
+	left: 40%;
+    width: 350px;
+    height: 300px;
+    background: url("../image/a.jpg") no-repeat;
+    background-size: 350px 300px;
+    z-index: 1000;
+
+}

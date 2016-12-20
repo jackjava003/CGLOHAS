@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<!-- Generated 2016/9/2 下午 05:21:46 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+
+	<class name="_01_register.model.register_bean" table="REGISTER_USER">
+
+		<id name="userID" type="int">
+
+			<column name="USERID" />
+			<generator class="assigned" />
+		</id>
+
+
+		<property name="account" type="java.lang.String">
+			<column name="ACCOUNT" />
+		</property>
+
+		<property name="password" type="java.lang.String">
+			<column name="PASSWORD" />
+		</property>
+
+		<property name="name" type="java.lang.String">
+			<column name="NAME" />
+		</property>
+
+		<property name="email" type="java.lang.String">
+			<column name="EMAIL" />
+		</property>
+
+		<property name="cellphone" type="java.lang.String">
+			<column name="CELLPHONE" />
+		</property>
+
+		<property name="sex" type="java.lang.String">
+			<column name="SEX" />
+		</property>
+
+		<property name="createTime" type="java.sql.Timestamp">
+			<column name="CREATETIME" />
+		</property>
+
+		<property name="birthDate" type="java.sql.Date">
+			<column name="BIRTHDATE" />
+		</property>
+
+		<property name="like_count" type="int">
+			<column name="LIKE_COUNT" />
+		</property>
+
+		<property name="dislike_count" type="int">
+			<column name="DISLIKE_COUNT" />
+		</property>
+
+		<property name="memberImage" type="java.sql.Blob">
+			<column name="userphoto" />
+		</property>
+
+		<property name="verified" type="java.lang.String">
+			<column name="VERIFIED" />
+		</property>
+
+
+	</class>
+
+</hibernate-mapping>

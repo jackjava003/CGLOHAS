@@ -1,0 +1,98 @@
+/***************************************
+   Default Styles
+************************************** */
+html, body {
+  margin: 0;
+  padding: 0;
+  background:#EBFFEB;
+}
+#board{
+	margin-top:200px;
+	width:150px;
+	background-color:#555;
+	padding:20px;
+	position:absolute;
+	left:-180px;
+}
+/*
+body {
+  font: 100% Verdana, Helvetica, Arial, sans-serif;
+  color: #000;
+  background: #fff;
+}
+#container {
+  font-size: 1.2em;
+  margin: 10px 2em;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 1.3em;
+  margin-bottom: .5em;
+}
+h3 {
+  font-size: 1.1em;
+  margin-bottom: 0;
+}
+
+code {
+  font-size: 1.2em;
+}
+
+a {
+  color: #06581f;
+}
+*/
+/*  選單之外表格  */
+.menuOuter {
+    border: 1px solid #FFF;
+    table-layout: fixed;
+    width: 100%;
+}
+/*  選單之內表格  */
+.menuInner {
+    border: 1px solid #FFF;
+    width: 100%;
+    table-layout: fixed;
+}
+
+
+.menuData  {
+    border: 1px solid #FFF;
+     width: 40px;
+}
+
+.menu {
+  margin: 0 1.5em;
+}
+
+.highlight {
+  background-color: #FFF;
+  margin: 0.5em 0;
+  border: 2px solid #FFF;  
+  padding: 0.5em;
+  font-style: italic;
+}
+.mainMenu {
+  overflow:hidden;
+  white-space: nowrap;
+  color:#00f;
+}
+
+.menu{
+	text-align:center;
+	float: left;
+	width:42px;
+	height:18px;
+	/* margin: [上方邊界值] [右邊邊界值] [下方邊界值] [左邊邊界值] */
+	margin: 2px;
+	/* border-width  border-style border-color */
+	border: 1px solid #FFF;
+	/*  padding: [上方留白值] [右邊留白值] [下方留白值] [左邊留白值]   */
+	padding: 3px 3px 3px 3px;
+}
+

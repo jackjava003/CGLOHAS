@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<!-- Generated 2016/9/2 下午 05:20:45 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+
+	<class name="_05_ShoppingCart.model.OrderItemDAOBean" table="orderitems">
+
+		<id name="seqNo" type="int">
+			<column name="SEQNO" />
+			<generator class="native" />
+		</id>
+		<property name="itemID" column="ITEMID" />
+		<property name="orderNo" column="ORDERID" />
+		<property name="amount" column="AMOUNT" />
+		<property name="unitPrice" column="UNITPRICE"/>
+		<property name="discount" column="DISCOUNT" />
+	</class>
+
+</hibernate-mapping>

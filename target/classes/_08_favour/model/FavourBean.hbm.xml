@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<!-- Generated 2016/9/2 下午 05:21:46 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+
+	<class name="_08_favour.model.FavourBean" table="favour">
+
+		<composite-id>
+			<key-property name="userID" type="int" />
+			<key-property name="recipesID" type="int" />
+			<generator class="assigned" />
+		</composite-id>
+		<property name="createTime" column="createTime" type="java.sql.Timestamp" generated="always" />
+	</class>
+
+</hibernate-mapping>

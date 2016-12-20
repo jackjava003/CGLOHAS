@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016/9/4 ?U?? 11:38:19 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="_03_recipes.model.recipes_itemBean" table="RECIPE_ITEM">
+        <id name="itemID" type="int">
+            <column name="ITEMID" />
+            <generator class="assigned" />
+        </id>
+        <property name="recipesID" type="int">
+            <column name="RECIPESID" />
+        </property>
+        <property name="detail" type="java.lang.String">
+            <column name="DETAIL" />
+        </property>
+    </class>
+</hibernate-mapping>

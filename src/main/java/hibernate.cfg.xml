@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+    <property name="hibernate.connection.datasource">java:comp/env/jdbc/cglohas</property>
+   
+    <!-- 2. 其他與資料存取有關的設定 -->
+    <!-- 自動產生資料庫的Schema -->
+	<property name="hbm2ddl.auto">update</property>
+	<!-- 顯示實際操作資料庫時的SQL --> 
+    <property name="show_sql">true</property> 
+    <!-- 將顯示的SQL排版，方便觀看 -->
+    <property name="format_sql">false</property>
+      
+    <property name="hibernate.current_session_context_class">thread</property>
+    <!-- 定義程式交易管理的類型，本範例使用JDBC Transaction -->
+    <property name = "transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</property>
+	<!-- hibernate 相關效能設定 -->
+	<property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+	<property name="connection_pool_size">10</property>
+	
+	<!-- 3. 宣告程式使用的Mapping檔 ，每個永續類別都需要定義一個Mapping檔	-->
+	<!-- 使用到hibernate的bean 需要把XXX.hbm.xml 路徑放入 -->
+	<mapping resource="_01_register/model/register_bean.hbm.xml"/>
+	<mapping resource="_02_login/model/LoginIPBean.hbm.xml"/>
+	<mapping resource="_04_listItems/model/item_bean.hbm.xml"/>
+	<mapping resource="_05_ShoppingCart/model/OrderBean.hbm.xml"/>
+	<mapping resource="_05_ShoppingCart/model/OrderItemDAOBean.hbm.xml"/>
+	<mapping resource="_03_recipes/model/recipesBean.hbm.xml"/>
+	<mapping resource="_03_recipes/model/recipes_itemBean.hbm.xml"/>
+	<mapping resource="_03_recipes/model/processBean.hbm.xml"/>
+	<mapping resource="_08_favour/model/FavourBean.hbm.xml"/>
+	<mapping resource="_09_community/model/HolderBean.hbm.xml"/>
+	<mapping resource="_09_community/model/HolderImageBean.hbm.xml"/>
+	<mapping resource="_09_community/model/JoinBean.hbm.xml"/>
+	<mapping resource="_09_community/model/MessageBean.hbm.xml"/>
+	<mapping resource="_10_postLike/model/PostLikeBean.hbm.xml"/>
+	<mapping resource="_11_notification/model/NotifyBean.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>

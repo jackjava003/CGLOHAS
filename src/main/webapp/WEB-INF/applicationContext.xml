@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="Register" class="_01_register.model.register_bean" scope="prototype"></bean>
+	<bean id="Hibernate_Register" class="_01_register.model.Hibernate_register_DAO" scope="prototype"></bean>
+	<bean id="Register_DAO" class="_01_register.model.register_DAO" scope="prototype"></bean>
+	
+	<bean id="LoginServiceDB" class="_02_login.model.LoginServiceDB" scope="prototype"></bean>
+	<bean id="LoginIPBean" class="_02_login.model.LoginIPBean" scope="prototype"></bean>
+	<bean id="LoginIPDAO" class="_02_login.model.LoginIPDAO" scope="prototype"></bean>
+	
+	<bean id="processBean" class="_03_recipes.model.processBean" scope="prototype"></bean>
+	<bean id="RecipeDetailBean" class="_03_recipes.model.RecipeDetailBean" scope="prototype"></bean>
+	<bean id="recipes_DAO" class="_03_recipes.model.recipes_DAO" scope="prototype"></bean>
+	<bean id="recipes_itemBean" class="_03_recipes.model.recipes_itemBean" scope="prototype"></bean>
+	<bean id="recipesBean" class="_03_recipes.model.recipesBean" scope="prototype"></bean>
+	
+	<bean id="item_bean" class="_04_listItems.model.item_bean" scope="prototype"></bean>
+	<bean id="item_DAO" class="_04_listItems.model.item_DAO" scope="prototype"></bean>
+	<bean id="OrderItemBean" class="_04_listItems.model.OrderItemBean" scope="prototype"></bean>
+	
+	<bean id="OrderBean" class="_05_ShoppingCart.model.OrderBean" scope="prototype"></bean>
+	<bean id="OrderDAO" class="_05_ShoppingCart.model.OrderDAO" scope="prototype"></bean>
+	<bean id="OrderItemDAOBean" class="_05_ShoppingCart.model.OrderItemDAOBean" scope="prototype"></bean>
+	<bean id="ShoppingCart" class="_05_ShoppingCart.model.ShoppingCart" scope="prototype"></bean>
+	
+	<bean id="HibernateDeleteDAO" class="_06_orderProcess.model.HibernateDeleteDAO" scope="prototype"></bean>
+	<bean id="ManageOrderDAO" class="_06_orderProcess.model.ManageOrderDAO" scope="prototype"></bean>
+	
+	<bean id="MainStoreAccessBean" class="_07_storeInfo.model.MainStoreAccessBean" scope="prototype"></bean>
+	<bean id="StoreAccessBean" class="_07_storeInfo.model.StoreAccessBean" scope="prototype"></bean>
+	<bean id="StoreAccessDAO" class="_07_storeInfo.model.StoreAccessDAO" scope="prototype"></bean>
+	<bean id="StoreAccessDetailBean" class="_07_storeInfo.model.StoreAccessDetailBean" scope="prototype"></bean>
+	
+	<bean id="FavourBean" class="_08_favour.model.FavourBean" scope="prototype"></bean>
+	<bean id="ManageMyFavourDAO" class="_08_favour.model.ManageMyFavourDAO" scope="prototype"></bean>
+	
+	<bean id="HolderBean" class="_09_community.model.HolderBean" scope="prototype"></bean>
+	<bean id="HolderImageBean" class="_09_community.model.HolderImageBean" scope="prototype"></bean>
+	<bean id="HolderManagementDAO" class="_09_community.model.HolderManagementDAO" scope="prototype"></bean>
+	<bean id="JoinBean" class="_09_community.model.JoinBean" scope="prototype"></bean>
+	<bean id="JoinDAO" class="_09_community.model.JoinDAO" scope="prototype"></bean>
+	<bean id="MessageBean" class="_09_community.model.MessageBean" scope="prototype"></bean>
+	<bean id="MessageDAO" class="_09_community.model.MessageDAO" scope="prototype"></bean>
+	
+	<bean id="PostLikeBean" class="_10_postLike.model.PostLikeBean" scope="prototype"></bean>
+	<bean id="PostLikeDAO" class="_10_postLike.model.PostLikeDAO" scope="prototype"></bean>
+	
+	<bean id="NotifyBean" class="_11_notification.model.NotifyBean" scope="prototype"></bean>
+	<bean id="NotifyDAO" class="_11_notification.model.NotifyDAO" scope="prototype"></bean>
+	
+</beans>

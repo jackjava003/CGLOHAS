@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<!-- Generated 2016/9/2 下午 05:21:46 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+
+	<class name="_10_postLike.model.PostLikeBean" table="post_like">
+
+		<id name="postLikeID" type="int">
+			<column name="postLikeID" />
+			<generator class="native" />
+		</id>
+		<property name="holderID"  />
+		<property name="posterID"  />
+		<property name="postType"  />
+		<property name="postTime" generated="always" />
+		
+	</class>
+
+</hibernate-mapping>

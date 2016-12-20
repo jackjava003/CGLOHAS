@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<!-- Generated 2016/9/2 下午 05:21:46 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+
+	<class name="_05_ShoppingCart.model.OrderBean" table="ORDERS">
+
+		<id name="orderID" type="int">
+			<column name="ORDERID" />
+			<generator class="assigned" />
+		</id>
+		<property name="userID" column="USERID" />
+		<property name="totalAmount" column="TOTALAMOUNT" />
+		<property name="cellphone" column="CELLPHONE" />
+		<property name="shippingAddress" column="ADDRESS" />
+		<property name="orderDate" column="ORDERDATE" generated="always"/>
+		<property name="shippingDate" column="SHIPPINGDATE" />
+		<property name="cancelTag" column="CANCELTAG" />
+		<property name="description" column="DESCRIPTION" />
+		<property name="discount" column="DISCOUNT" />
+	</class>
+
+</hibernate-mapping>

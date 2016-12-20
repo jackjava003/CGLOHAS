@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+
+<!-- Generated 2016/9/2 下午 05:21:46 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+
+	<class name="_04_listItems.model.item_bean" table="item">
+
+		<id name="itemID" type="int">
+			<column name="ITEMID" />
+			<generator class="native" />
+		</id>
+		
+		<property name="name" column="NAME" />
+		<property name="info" column="INFO" />
+		<property name="price" column="PRICE" />
+		<property name="storage" column="STORAGE" />
+		<property name="type" column="TYPE" />
+		<property name="popular" column="POPULAR" />
+		<property name="itemImg" column="IMAGE" type="binary" />
+		<property name="discount" column="DISCOUNT" />
+
+
+	</class>
+
+</hibernate-mapping>
